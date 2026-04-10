@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover a curated collection of paintings, digital art, and sketches in our responsive art gallery. Explore creativity and artistic expression.">
+  <title>Art Gallery | Curated Collection</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">🎨 Art Gallery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- //banner section// -->
+  <header class="hero d-flex align-items-center text-white text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-5 fw-bold">Discover Extraordinary Art</h1>
+          <p class="lead mb-4">Immerse yourself in a world of creativity with our curated collection of paintings, digital art, and sketches from talented artists.</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#gallery" class="btn btn-light btn-lg">Explore Collection</a>
+            <a href="#about" class="btn btn-outline-light btn-lg">About Gallery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- //Gallery Section -->
+  <section class="container py-5">
+    <!-- Gallery Header -->
+    <div class="text-center mb-4">
+      <h2 class="section-title">Featured Collections</h2>
+      <p class="text-secondary">Choose a category to filter artworks instantly with a fast, responsive gallery layout.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="text-center mb-5">
+      <div class="btn-group" role="group" aria-label="Art categories">
+        <button type="button" class="btn btn-outline-dark active" data-filter="all">All</button>
+        <button type="button" class="btn btn-outline-dark" data-filter="Printing">Painting</button>
+        <button type="button" class="btn btn-outline-dark" data-filter="Photography">Handmade</button>
+        <button type="button" class="btn btn-outline-dark" data-filter="Sketch">Sketch</button>
+      </div>
+    </div>
+
+    <!-- Gallery Items Container -->
+    <div id="gallery" class="row g-4">
+      <!-- Art Card 1 -->
+      <div class="col-sm-6 col-lg-3 filter-item Printing">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="images/p1.jpg" loading="lazy" class="card-img-top" alt="Fine art print">
+          <div class="card-body">
+            <h5 class="card-title">Painting</h5>
+            <p class="card-text">Artist: Neel</p>
+            <p class="price">₹5000</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 2: -->
+      <div class="col-sm-6 col-lg-3 filter-item Photography">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/h1.jpg" loading="lazy" class="card-img-top" alt="Fine art photograph">
+          <div class="card-body">
+            <h5 class="card-title">Handmade</h5>
+            <p class="card-text">Artist: Sara</p>
+            <p class="price">₹1500</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 3: -->
+      <div class="col-sm-6 col-lg-3 filter-item Sketch">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/s1.jpg" loading="lazy" class="card-img-top" alt="Charcoal sketch portrait">
+          <div class="card-body">
+            <h5 class="card-title">Sketch</h5>
+            <p class="card-text">Artist: Rahul</p>
+            <p class="price">₹3900</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 4: -->
+      <div class="col-sm-6 col-lg-3 filter-item Printing">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="images/p4.jpg" loading="lazy" class="card-img-top" alt="Archival print artwork">
+          <div class="card-body">
+            <h5 class="card-title">Painting</h5>
+            <p class="card-text">Artist: Aisha</p>
+            <p class="price">₹10000</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 5: -->
+      <div class="col-sm-6 col-lg-3 filter-item Photography">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/h2.jpg" loading="lazy" class="card-img-top" alt="Sunset photography">
+          <div class="card-body">
+            <h5 class="card-title">Handmade</h5>
+            <p class="card-text">Artist: Priya</p>
+            <p class="price">₹7300</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 6: -->
+      <div class="col-sm-6 col-lg-3 filter-item Sketch">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/s3.jpg" loading="lazy" class="card-img-top" alt="Abstract sketch artwork">
+          <div class="card-body">
+            <h5 class="card-title">Sketch</h5>
+            <p class="card-text">Artist: Vikram</p>
+            <p class="price">₹3100</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 7: -->
+      <div class="col-sm-6 col-lg-3 filter-item Printing">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="images/p2.jpg" loading="lazy" class="card-img-top" alt="Modern art print">
+          <div class="card-body">
+            <h5 class="card-title">Painting</h5>
+            <p class="card-text">Artist: Amit</p>
+            <p class="price">₹7500</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 8: -->
+      <div class="col-sm-6 col-lg-3 filter-item Photography">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/h3.jpg" loading="lazy" class="card-img-top" alt="Nature photography">
+          <div class="card-body">
+            <h5 class="card-title">Handmade</h5>
+            <p class="card-text">Artist: Neha</p>
+            <p class="price">₹15000</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 9: -->
+      <div class="col-sm-6 col-lg-3 filter-item Sketch">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/s4.jpg" loading="lazy" class="card-img-top" alt="Ink drawing artwork">
+          <div class="card-body">
+            <h5 class="card-title">Sketch</h5>
+            <p class="card-text">Artist: Dev</p>
+            <p class="price">₹1200</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 10: -->
+      <div class="col-sm-6 col-lg-3 filter-item Printing">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="images/p6.jpg" loading="lazy" class="card-img-top" alt="Vintage poster print">
+          <div class="card-body">
+            <h5 class="card-title">Painting</h5>
+            <p class="card-text">Artist: Maya</p>
+            <p class="price">₹4000</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 11: -->
+      <div class="col-sm-6 col-lg-3 filter-item Photography">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/h4.jpg" loading="lazy" class="card-img-top" alt="Urban photography">
+          <div class="card-body">
+            <h5 class="card-title">Handmade</h5>
+            <p class="card-text">Artist: Arjun</p>
+            <p class="price">₹1300</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Art Card 12: -->
+      <div class="col-sm-6 col-lg-3 filter-item Sketch">
+        <div class="card gallery-card shadow-sm border-0">
+          <img src="Images/s5.jpg" loading="lazy" class="card-img-top" alt="Pencil portrait sketch">
+          <div class="card-body">
+            <h5 class="card-title">Sketch</h5>
+            <p class="card-text">Artist: Sophia</p>
+            <p class="price">₹1200</p>
+            <a href="#" class="btn btn-primary btn-sm">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT SECTION -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center gx-5">
+        <div class="col-lg-6">
+          <h2 class="section-title">About the Gallery</h2>
+          <p class="text-secondary mb-4">An online showcase dedicated to celebrating printing, photography, and sketch work from contemporary artists and emerging talents.</p>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-3"><strong>Curated collections:</strong> fine art prints, photography, and expressive sketches.</li>
+            <li class="mb-3"><strong>Website focus:</strong> fast loading, responsive browsing, and engaging visual storytelling.</li>
+            <li class="mb-3"><strong>Visitor experience:</strong> filter by category, view artwork details, and explore artist highlights.</li>
+            <li><strong>Built with:</strong> Bootstrap 5, custom styling, and mobile-first design best practices.</li>
+          </ul>
+        </div>
+
+        <!-- Gallery Highlights Card -->
+        <div class="col-lg-5 offset-lg-1">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h3 class="h5 mb-4">Gallery Highlights</h3>
+              <div class="d-flex flex-column gap-3">
+                <!-- Highlight 1 -->
+                <div class="p-3 bg-white rounded-3 border">
+                  <h6 class="mb-1">Exhibition Ready</h6>
+                  <p class="mb-0 small text-secondary">Optimized images, clean layout, and accessible navigation for every visitor.</p>
+                </div>
+
+                <!-- Highlight 2 -->
+                <div class="p-3 bg-white rounded-3 border">
+                  <h6 class="mb-1">Artist Stories</h6>
+                  <p class="mb-0 small text-secondary">Each piece includes artist name, inspiration, and category for a deeper connection.</p>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="p-3 bg-white rounded-3 border">
+                  <h6 class="mb-1">Design Philosophy</h6>
+                  <p class="mb-0 small text-secondary">Modern gallery aesthetics with performance-friendly markup and Bootstrap support.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- //Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title mb-2">Get In Touch</h2>
+        <p class="text-secondary">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      </div>
+      <div class="row gx-5">
+        <!-- Contact Info -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <h5 class="card-title">📍 Location</h5>
+                <p class="text-secondary">123 Art Street<br>Creative City, CC 12345<br>United States</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <h5 class="card-title">📞 Contact Info</h5>
+                <p class="text-secondary">Phone: +1 (555) 123-4567<br>Email: info@artgallery.com<br>Hours: Mon-Fri 9AM-6PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <h5 class="card-title">🌐 Follow Us</h5>
+                <p class="text-secondary">Facebook | Instagram | Twitter<br>LinkedIn | Pinterest | YouTube</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-lg border-0">
+            <div class="card-body p-5">
+              <h5 class="card-title mb-4">Send Us a Message</h5>
+              <form id="contactForm">
+                <!-- Name Field -->
+                <div class="mb-3">
+                  <label for="contactName" class="form-label fw-500">Full Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Your name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label fw-500">Email Address</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="your@email.com" required>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="mb-3">
+                  <label for="subject" class="form-label fw-500">Subject</label>
+                  <input type="text" class="form-control" id="subject" placeholder="Message subject" required>
+                </div>
+
+                <!-- Message Field -->
+                <div class="mb-3">
+                  <label for="message" class="form-label fw-500">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- //footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">© 2026 Art Gallery | Curated Exhibition</p>
+      <large>By Ravikanti Bharath</large>
+    </div>
+  </footer>
+
+<!-- //script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Gallery Filter Functionality
+    document.querySelectorAll('[data-filter]').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('[data-filter]').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        const filter = button.getAttribute('data-filter');
+        document.querySelectorAll('.filter-item').forEach(card => {
+          card.style.display = filter === 'all' || card.classList.contains(filter) ? 'block' : 'none';
+        });
+      });
+    });
+
+    // Signup Form Validation
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const contactName = document.getElementById('contactName').value.trim();
+        const contactEmail = document.getElementById('contactEmail').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        // Basic validation
+        if (contactName.length < 3) {
+          alert('Please enter a valid name (at least 3 characters)');
+          return;
+        }
+        
+        if (message.length < 10) {
+          alert('Message must be at least 10 characters long');
+          return;
+        }
+        
+        // Success message
+        alert('Thank you ' + contactName + '! Your message has been sent successfully. We will get back to you soon.');
+        
+        // Reset form
+        contactForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>
